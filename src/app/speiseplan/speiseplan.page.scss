@@ -1,0 +1,48 @@
+
+
+
+.Box {
+    float: left;
+    width: 32%;
+    margin-right: 2%;
+    padding: 20px;
+    background: #FFFFFF;
+    box-sizing: border-box;
+    margin-right: 0;
+     
+    
+   }
+
+   .Preis{
+         color: green;
+         font-size: 25px;
+   }
+
+   ion-img{
+    object-fit: cover;
+    height: 350px;
+}
+
+.UnterBox{
+    float: left;
+    width: 32%;
+    margin-right: 2%;
+    padding: 20px;
+    background:#FFFFFF;
+    box-sizing: border-box;
+    margin-right: 0;
+}
+#Speiseplan {
+    display:flex;
+    flex-wrap: wrap;
+
+}
+
+.Kategorie {
+  display: block;
+  height: 15px;
+
+}
+
+
+
