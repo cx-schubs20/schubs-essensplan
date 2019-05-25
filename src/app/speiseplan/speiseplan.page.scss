@@ -12,10 +12,15 @@
      
     
    }
+   ion-card-title{
+       height: 55px;
+   }
 
    .Preis{
          color: green;
          font-size: 25px;
+         float: right;
+          
    }
 
    ion-img{
@@ -42,7 +47,9 @@
   display: block;
   height: 15px;
 
-}
-
-
-
+} 
+.Kalendarmittig{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}    

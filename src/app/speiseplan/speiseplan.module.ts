@@ -5,6 +5,8 @@ import { Routes, RouterModule } from '@angular/router';
 import { IonicModule } from '@ionic/angular';
 import { SpeiseplanPage } from './speiseplan.page';
 
+import {MatInputModule, MatDatepickerModule, MatIconModule} from '@angular/material';
+
 const routes: Routes = [
   {
     path: '',
@@ -17,7 +19,10 @@ const routes: Routes = [
     CommonModule,
     FormsModule,
     IonicModule,
-    RouterModule.forChild(routes)
+    RouterModule.forChild(routes),
+    MatInputModule,
+    MatIconModule,
+    MatDatepickerModule,
   ],
   declarations: [SpeiseplanPage]
 })

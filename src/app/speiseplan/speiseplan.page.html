@@ -1,7 +1,12 @@
 <ion-content>
   <!-- TODO: Schöneres Layouting für Anzeige von Gerichten -->
  
- 
+    
+  <mat-form-field class="Kalendarmittig"  >
+    <input  [(ngModel)]= "selectedDate" matInput [matDatepicker]="picker" (dateChange)="datumGeandert()" placeholder="Choose a date">
+    <mat-datepicker-toggle matSuffix [for]="picker"></mat-datepicker-toggle>
+    <mat-datepicker #picker></mat-datepicker>
+  </mat-form-field>
   
   <div id="Speiseplan">
       
@@ -26,10 +31,4 @@
 
   </div>
   
-  
-  
-  
-  
-
-
 </ion-content>

@@ -4,6 +4,7 @@ import { Service } from '../services/service'
 import { Gericht } from '../classes/gericht';
 import { combineLatest } from 'rxjs';
 
+
 @Component({
   selector: 'app-speiseplan',
   templateUrl: './speiseplan.page.html',
@@ -28,9 +29,13 @@ export class SpeiseplanPage implements OnInit {
   getGericht(id: number): void {
     this.service.ladeGericht(id).subscribe(gericht => console.log(gericht));
   }
+  
+  datumGeandert(): void {
+    this.getSpeiseplan();
+   }
 
   getSpeiseplan(): void {
-
+  
     combineLatest(
       this.service.ladeHauptgerichte(this.selectedDate), 
       this.service.ladeBeilagen(this.selectedDate))
@@ -40,8 +45,10 @@ export class SpeiseplanPage implements OnInit {
         this.loadingFinished = true;
       }, () => this.loadingFinished = true);
   }
-
-  datumChange(): void {
-    this.getSpeiseplan();
-  }
+   
+ 
 }
+
+
+
+
