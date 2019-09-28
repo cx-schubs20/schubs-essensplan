@@ -50,6 +50,30 @@
 } 
 .Kalendarmittig{
     display: flex;
-    align-items: center;
-    justify-content: center;
+    align-items: right;
+    justify-content: right;
 }    
+.Umformung{
+    text-align: center;
+    front-size: 10px
+
+}
+
+.Bearbeitung{
+    float: center;
+    max-width: 300px;
+    display: inline;
+    padding: 20px;
+    margin-right: 2%;
+    vertical-align: middle;
+
+}
+
+.text1{
+    margin-left: 10px;
+
+}
+
+.Hauptblock{
+    
+}

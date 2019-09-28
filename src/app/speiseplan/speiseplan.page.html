@@ -1,6 +1,15 @@
 <ion-content>
   <!-- TODO: Schöneres Layouting für Anzeige von Gerichten -->
- 
+ <div id="start">
+  <ioncard class="Hauptblock">
+    
+      <a class="Umformung">
+        <img class="Bearbeitung" style="float: left;" src="C:\Users\SchuBs 2019\Desktop\Essensplan\src\assets\hotel-vivendi.svg" /> <h1 class="Text1"></h1> 
+        Speiseplan 
+      </a>
+   
+  </ioncard>
+ </div>
     
   <mat-form-field class="Kalendarmittig"  >
     <input  [(ngModel)]= "selectedDate" matInput [matDatepicker]="picker" (dateChange)="datumGeandert()" placeholder="Choose a date">
@@ -31,4 +40,5 @@
 
   </div>
   
+
 </ion-content>
